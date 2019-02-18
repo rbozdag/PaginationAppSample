@@ -1,0 +1,28 @@
+/* 
+  NetworkErrors.strings
+  PaginationAssignment
+
+  Created by Rahmi Bozdağ on 16.02.2019.
+  Copyright © 2019 Rahmi Bozdag. All rights reserved.
+*/
+
+"manufacturers.page.title" = "Manufacturers";
+"ok.button.title" = "OK";
+
+"NetworkError_0" = "NetworkError: Undefined";
+"NetworkError_1"  = "NetworkError: There is no internet connection.";
+"NetworkError_2"  = "NetworkError: Cancelled";
+"NetworkError_3"  = "NetworkError: Timed Out";
+"NetworkError_4"  = "NetworkError: Invalid ContentType";
+"NetworkError_5"  = "NetworkError: No Acceptable Method";
+"NetworkError_6"  = "NetworkError: Bad Paramater";
+"NetworkError_7" =  "NetworkError: Encoding Failed";
+"NetworkError_8"  = "NetworkError: Missing URL";
+"NetworkError_9"  = "NetworkError: Mapping Error";
+"NetworkError_10"  = "NetworkError: Nil Response";
+"NetworkError_11"  = "NetworkError: Nil Data";
+"NetworkError_12"  = "NetworkError: Unknown Http Status";
+"NetworkError_13"  = "NetworkError: Task Not Created";
+"NetworkError_14"  = "NetworkError: Invalid Checksum";
+"NetworkError_15"  = "NetworkError: Unsupported URL";
+"NetworkError_16"  = "NetworkError: Cannot Find Host";

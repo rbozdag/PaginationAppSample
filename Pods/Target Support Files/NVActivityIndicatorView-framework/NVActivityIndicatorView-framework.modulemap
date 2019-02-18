@@ -1,0 +1,6 @@
+framework module NVActivityIndicatorView {
+  umbrella header "NVActivityIndicatorView-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

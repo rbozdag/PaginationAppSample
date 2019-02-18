@@ -1,0 +1,6 @@
+module OHHTTPStubs {
+  umbrella header "OHHTTPStubs-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

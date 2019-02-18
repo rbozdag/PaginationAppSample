@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="121" id="UZX-8W-V64" customClass="PaginationLoadingCellView" customModule="AutoCodingAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="778" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UZX-8W-V64" id="OaO-2o-T38">
+                <rect key="frame" x="0.0" y="0.0" width="778" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKt-xA-N6S" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                        <rect key="frame" x="36" y="50.5" width="706" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="20" id="sqD-tU-3Bn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="0.1764705882" green="0.27450980390000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballPulseSync"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tKt-xA-N6S" firstAttribute="centerY" secondItem="OaO-2o-T38" secondAttribute="centerY" id="0KI-Zg-kzt"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="tKt-xA-N6S" secondAttribute="bottom" priority="750" constant="5" id="P7I-ps-0YI"/>
+                    <constraint firstItem="tKt-xA-N6S" firstAttribute="leading" secondItem="OaO-2o-T38" secondAttribute="leadingMargin" constant="16" id="PXr-jI-7uq"/>
+                    <constraint firstItem="tKt-xA-N6S" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OaO-2o-T38" secondAttribute="topMargin" priority="750" constant="5" id="gYH-Xo-TbZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tKt-xA-N6S" secondAttribute="trailing" constant="16" id="yNV-5q-Kcg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.89545053243637085" green="0.97222548723220825" blue="0.89606571197509766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="loadingAnimation" destination="tKt-xA-N6S" id="tUX-UW-efQ"/>
+            </connections>
+            <point key="canvasLocation" x="609.60000000000002" y="43.628185907046479"/>
+        </tableViewCell>
+    </objects>
+</document>

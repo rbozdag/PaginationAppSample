@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="u6m-wM-VmQ" customClass="PaginationErrorCellView" customModule="AutoCodingAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u6m-wM-VmQ" id="wG1-5y-KTm">
+                <rect key="frame" x="0.0" y="0.0" width="512" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MUt-mt-QPV">
+                        <rect key="frame" x="16" y="30" width="480" height="66.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un9-l1-NSB">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="again_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0BL-ts-VK1">
+                                <rect key="frame" x="198" y="26.5" width="84" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fZS-Eh-sUz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="un9-l1-NSB" firstAttribute="leading" secondItem="MUt-mt-QPV" secondAttribute="leading" id="6MS-oc-xPa"/>
+                        </constraints>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOT-05-Y1f">
+                        <rect key="frame" x="181" y="30" width="150" height="66.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="KB7-eA-nl2"/>
+                        </constraints>
+                        <connections>
+                            <action selector="reload" destination="u6m-wM-VmQ" eventType="touchUpInside" id="r5Q-dZ-K2P"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QOT-05-Y1f" firstAttribute="centerX" secondItem="wG1-5y-KTm" secondAttribute="centerX" id="7gT-CL-L4L"/>
+                    <constraint firstAttribute="trailing" secondItem="MUt-mt-QPV" secondAttribute="trailing" constant="16" id="KFQ-MU-qZK"/>
+                    <constraint firstItem="0BL-ts-VK1" firstAttribute="bottom" secondItem="QOT-05-Y1f" secondAttribute="bottom" id="Y6u-Lg-IkS"/>
+                    <constraint firstItem="MUt-mt-QPV" firstAttribute="leading" secondItem="wG1-5y-KTm" secondAttribute="leading" constant="16" id="YMn-pc-hYz"/>
+                    <constraint firstItem="MUt-mt-QPV" firstAttribute="centerY" secondItem="wG1-5y-KTm" secondAttribute="centerY" id="f2D-6B-7bo"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MUt-mt-QPV" secondAttribute="bottom" constant="5" id="fuH-3I-aix"/>
+                    <constraint firstItem="MUt-mt-QPV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wG1-5y-KTm" secondAttribute="top" constant="5" id="jLB-Ne-DK9"/>
+                    <constraint firstItem="QOT-05-Y1f" firstAttribute="top" secondItem="un9-l1-NSB" secondAttribute="top" id="sbU-ZZ-YU2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="errorMessageLabel" destination="un9-l1-NSB" id="p0P-Q8-ptP"/>
+            </connections>
+            <point key="canvasLocation" x="142.40000000000001" y="277.51124437781112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="again_icon" width="84.5" height="84.5"/>
+    </resources>
+</document>

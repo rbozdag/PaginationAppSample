@@ -1,0 +1,22 @@
+{
+    "page" : 1,
+    "pageSize" : 15,
+    "totalPageCount" : 5,
+    "wkda" : {
+        "190" : "Citroen",
+        "191" : "Corvette",
+        "194" : "Dacia",
+        "195" : "Daewoo",
+        "210" : "Daihatsu",
+        "230" : "Dodge",
+        "277" : "Ferrari",
+        "280" : "Fiat",
+        "285" : "Ford",
+        "340" : "Honda",
+        "315" : "Hummer",
+        "345" : "Hyundai",
+        "357" : "Infiniti",
+        "362" : "Isuzu",
+        "365" : "Iveco"
+    }
+}
