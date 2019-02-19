@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/rbozdag/Workspace/GitHub/rbozdag/PaginationAssignment/PaginationAssignment.xcodeproj">
+      location = "group:PaginationAssignment.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Modules/PaginationAdapter/PaginationAdapter.xcodeproj">
